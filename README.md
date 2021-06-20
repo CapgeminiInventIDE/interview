@@ -22,6 +22,19 @@ You can use any techniques or services for finding the dominant color, however y
 
 > The purpose of this question is to show how to clearly expose data in your applications to external users with zero prior knowledge of your systems.
 
+Create a well documented API (hint: swagger) that users can get information about yourself (information can be faked), for example:
+
+- `curl -X GET http://localhost:8000/me/age` should return your age, eg `{'age': 31, 'unit': 'years'}`
+- `curl -X GET http://localhost:8000/me/age?unit=days` should return your age, eg `{'age': 11323, 'unit': 'days'}`
+- `curl -X GET http://localhost:8000/me/height` should return your height eg `{'height': 180, 'unit': 'cm'}`
+- `curl -X GET http://localhost:8000/me/height?unit=feet` should return your height eg `{'height': 5.9, 'unit': 'foot'}`
+- `curl -X GET http://localhost:8000/me/name` should return your name eg `{'first': 'Jane', 'last': 'Doe'}`
+- `curl -X GET http://localhost:8000/me/gender` should return your gender eg `{'gender': 'F'}`
+- `curl -X GET http://localhost:8000/me/favorite/food` should return your top 5 favorite foods eg `[{'name': 'Pizza'}, {'name': 'Pie'}, {'name': 'Poultry'}, {'name': 'Peas'}, {'name': 'Peanuts'}]`
+- `curl -X GET http://localhost:8000/me/favorite/food?max=3` should return your top 3 favorite foods eg `[{'name': 'Pizza'}, {'name': 'Pie'}, {'name': 'Poultry'}]`
+- `curl -X GET http://localhost:8000/me/favorite/drinks` should return your top 5 favorite drinks eg `[{'name': 'Water'}, {'name': 'Watermelon Juice'}, {'name': 'Soda Water'}, {'name': 'Sparkling Water'}, {'name': 'Flavoured Water'}]`
+- `curl -X GET http://localhost:8000/me/favorite/food?max=2` should return your top 2 favorite drinks eg `[{'name': 'Water'}, {'name': 'Watermelon Juice'}]`
+
 ### Question 3 - Complex Problem
 
 > The purpose of this question is to see how you tackle complex problems, which have simple solutions.
