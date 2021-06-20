@@ -63,7 +63,16 @@ These kind of locks can have unlimited attempts and do not sound any alarm, ther
 
 > The purpose of this question is to evaluate your capacity to perform a constructive code review for your peers.
 
-TODO: Add in piece of code ~ 10-15 lines long for review, the applicant will make notes, but ultimately give verbal feedback to the interviewer in a role playing exercise.
+You should review the below piece of code, make notes on how your reviewee could adapt or change the code (ask questions to your "client" - see top of page). You will ultimately give verbal feedback to the interviewer in a role playing exercise.
+
+```python
+def get_line_coef(p1, p2):
+    points = [p1, p2]
+    x_coords, y_coords = zip(*points)
+    A = np.vstack([x_coords, np.ones(len(x_coords))]).T
+    m, c = np.linalg.lstsq(A, y_coords, rcond=None)[0]
+    return m, c
+```
 
 ### Question 5 - Technology Assessment
 
