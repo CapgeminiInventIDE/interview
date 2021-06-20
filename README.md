@@ -10,6 +10,14 @@ You have **5 days** to complete this assignment, which should be submitted to us
 
 > The purpose of this question is to demonstrate your data gathering and manipulation skills.
 
+Use the [Pokemon API](https://pokeapi.co/) to create a tabular data structure which has the following format (for all pokemon):
+
+| id | order | name | weight | speed | special-defense | special-attack | defense | attack | hp | dominant_color | image_link |
+| -- | ----- | ---- | ------ | ---------- | ----- | --------------- | -------------- | ------- | ------ | -- | ------- |
+| 132| 203 | Ditto | 40 | 48 | 48 | 48 | 48 |  48 | 48 | #9C5CB4 | https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png |
+
+You can use any techniques or services for finding the dominant color, however you should be able to explain how it works.
+
 ### Question 2 - Exposing Data
 
 > The purpose of this question is to show how to clearly expose data in your applications to external users with zero prior knowledge of your systems.
