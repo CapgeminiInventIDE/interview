@@ -18,6 +18,26 @@ You have **5 days** to complete this assignment, which should be submitted to us
 
 > The purpose of this question is to see how you tackle complex problems, which have simple solutions.
 
+A safe keypad has the following layout:
+
+```txt
+┌───┬───┬───┐
+│ a │ b │ c │
+├───┼───┼───┤
+│ d │ e │ f │
+├───┼───┼───┤
+│ g │ h │ i │
+└───┼───┼───┘
+    │ j │
+    └───┘
+```
+
+You are able to observe the targeted person entering the code, which you think is "afdj" it is possible that each of the characters could actually be another that is adjacent (horizontally or vertically, but not diagonally). Eg "a" could have been "b" or "d".
+
+These kind of locks can have unlimited attempts and do not sound any alarm
+
+Your task is to make a function `crack(code: str) -> List[str]: ...` that can find all variations for a given code that could be 1-8 characters in length.
+
 ### Question 4 - Code Review
 
 > The purpose of this question is to evaluate your capacity to perform a constructive code review for your peers.
