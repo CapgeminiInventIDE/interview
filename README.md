@@ -6,6 +6,10 @@
 
 # Interview - Data Everywhere
 
+This interview structure has been selected to slowly increase ambiguity, with the ability to talk to "clients". The aim of which is to emulate the tasks you would be expected to do while working on projects with clients.
+
+*You should take the opportunity to showcase your skills to show what sets you apart.*
+
 ## Instructions
 
 - You have **5 days** to complete this assignment, which should be submitted to us as a **private** repo (make sure to allow access to the given hiring manager's github account).
@@ -98,7 +102,7 @@ def get_line_coef(p1, p2):
 
 > The purpose of this question is to gain an understanding on your ability to perform a literature search and present arguments for/against a given technology and supply an ultimate decision.
 
-TODO: Add in a technology (eg webserver, language, ML choices for client, ...) for applicant to pose a few solutions to and present back in the interview.
+You will be supplied a technology (eg webserver, language, ML choices for client, ...) to conduct a literature search on. You should present arguments for/against a given technology and supply an ultimate decision. You will be expected to present your findings in the interview and defend your stance.
 
 ---
 
@@ -106,7 +110,14 @@ TODO: Add in a technology (eg webserver, language, ML choices for client, ...) f
 
 > The purpose of the case study is to evaluate your Data Science skills applied to consulting, which should show a combination of domain knowledge, technology (ML, statistics, programming), and business acumen.
 
-You should pick **one** of the below projects to complete, you will present this project to the interviewers and add your source code into your repository.
+- Pick **one** of the below projects to complete, you will present this project to the "clients" (interviewers)
+- Add any of your source code into your repository for submission
+- Create a presentation that covers:
+  - Initial data analysis and exploration
+  - Modelling proposals and assumptions
+  - Proposed architecture  
+  - Path to production
+  - Business value proposition
 
 #### Project 1
 
