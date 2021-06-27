@@ -10,11 +10,20 @@ This interview structure has been selected to slowly increase ambiguity, with th
 
 *You should take the opportunity to showcase your skills to show what sets you apart.*
 
+## Our Interview process
+
+- [x] Apply
+- [x] Phone screening and resume assessment
+- [ ] Take Home Assignment
+- [ ] Panel Interview with a Manager & Senior Manager
+- [ ] Offer
+
 ## Instructions
 
 - You have **5 days** to complete this assignment, which should be submitted to us as a **private** repo (make sure to allow access to the given hiring manager's github account).
 - We have layed out a sample structure for you in the [submission folder](/submission), you should add your submission material into this folder.
 - You should answer **2** out of 3 questions from section A and all of section B.
+- This technical assessment should take around 2-3 hours
 
 While doing this take home assignment you will have access to the "client" through the teams link that has been sent to you by the recruitment team, simply join the meeting at anytime to start sending messages to the "client". They can clarify any questions for you in the technical section, and they will be responsive to questions you have for your case study, to emulate real client interactions.
 
@@ -34,7 +43,7 @@ Use the [Pokemon API](https://pokeapi.co/) to create a tabular data structure wh
 
 You can use any techniques, packages or services for finding the dominant color, however you should be able to explain how it works in the interview.
 
----
+-----------
 
 ### Question 2 - Exposing Data
 
@@ -55,7 +64,7 @@ Create a well documented API (hint: swagger) that users can get information abou
 | `/me/favorite/drinks`     | Returns the full list of favorite drinks | `[{'name': 'Water'}, {'name': 'Watermelon Juice'}, {'name': 'Soda Water'}, {'name': 'Sparkling Water'}, {'name': 'Flavoured Water'}]` |
 | `/me/favorite/food?max=2` | Returns at most 3 favorite drinks        | `[{'name': 'Water'}, {'name': 'Watermelon Juice'}]`                                                                                   |
 
----
+-----------
 
 ### Question 3 - Complex Problem
 
@@ -96,7 +105,7 @@ def get_line_coef(p1, p2):
     return m, c
 ```
 
----
+-----------
 
 ### Question 2 - Technology Assessment
 
@@ -104,7 +113,7 @@ def get_line_coef(p1, p2):
 
 You will be supplied a technology (eg webserver, language, ML choices for client, ...) to conduct a literature search on. You should present arguments for/against a given technology and supply an ultimate decision. You will be expected to present your findings in the interview and defend your stance.
 
----
+-----------
 
 ### Question 3 - Project/Case Study
 
@@ -119,14 +128,41 @@ You will be supplied a technology (eg webserver, language, ML choices for client
   - Path to production
   - Business value proposition
 
-#### Project 1
+#### Project 1 - Classic
 
-Tabular data...
+You are working with a utility company in the USA named Waterco, they want to understand if there is an issue with customers paying late, and what factors influence this.
 
-#### Project 2
+If there are issues found, they want to understand how they could productionise a Data Science solution to analyse these factors in real-time, and what a project would look like to implement
 
-Image data...
+- [Dataset (zipped csv)](/data/waterco/missed_payments.zip)
+- [Data definitions](/data/waterco/definitions.txt)
 
-#### Project 3
+#### Project 2 - Image
 
-Time-series data...
+You are working on a proposal for uplifting the governments identification process, which includes supplying a passport quality image of the applicants face. You should supply a proposal with a plan on how to build and deploy a solution that can verify an applicants photograph from a government issued mobile application.
+
+Helpful links:
+
+- [Passport photo guidelines](https://www.passports.gov.au/getting-passport-how-it-works/photo-guidelines)
+- [Open source human face dataset](https://www.kaggle.com/ashwingupta3012/human-faces)
+
+#### Project 3 - NLP
+
+You are working with an intelligence organization who want to build a service that can pull information from a device in order to establish the targets network. You have been asked to supply a proposal with a plan on how to build and deploy a solution. The solution should find and match entities with enriched information from unstructured texts and contacts.
+
+**Example data:**
+
+```json
+{
+  "message": "Is John with you?",
+  "to": "+61484932566",
+  "gps": [
+    -37.840935, 144.946457
+  ],
+  "epoch": 1561623216
+}
+```
+
+# References
+
+- This take-home was built with the applicant in mind and took learnings from [CodeSubmit](https://codesubmit.io/blog/take-home-coding-challenge/)
