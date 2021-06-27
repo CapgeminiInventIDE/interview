@@ -130,12 +130,7 @@ You will be supplied a technology (eg webserver, language, ML choices for client
 
 #### Project 1 - Classic
 
-You are working with a utility company in the USA named Waterco, they want to understand if there is an issue with customers paying late, and what factors influence this.
-
-If there are issues found, they want to understand how they could productionise a Data Science solution to analyse these factors in real-time, and what a project would look like to implement
-
-- [Dataset (zipped csv)](/data/waterco/missed_payments.zip)
-- [Data definitions](/data/waterco/definitions.txt)
+You are working with a utilities company that wants to understand why customers are paying late, they keep all of their customer and payment data in a relational database and want to use data science to understand what their customers are experiencing, how would you design an analytics platform and pipeline to facilitate this.
 
 #### Project 2 - Image
 
